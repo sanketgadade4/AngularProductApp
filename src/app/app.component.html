@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div class="container">
+   
+    <div class="row">
+      <div class="col-sm-6">
+          <img src="../assets/images/logo.png" alt="" width="40%" height="30%">
+        
+      </div>
+      <div class="col-sm-6">
+          <h2>Welcome to {{productname}} {{productmanf}}!</h2>
+          {{productvalue}}
+      </div>
+    </div>
+  </div>
+<hr>
+<!-- listcomponent -->
+<div class="row">
+  <div class="col-md-6">
+      <app-listcomp (childEvent)="productname=$event" (productValueEvent)="productvalue=$event" (productManfEvent)="productmanf=$event" [parentData]="name" [parentData]="value"></app-listcomp> 
+  </div> 
+
+  <div class="col-md-6">
+      <app-product-details [parentData]="productname" [parentData2]="productvalue" [parentData3]="productmanf"></app-product-details>
+  </div> 
+</div>
+  <hr>
+<router-outlet></router-outlet>

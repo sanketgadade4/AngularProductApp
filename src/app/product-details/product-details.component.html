@@ -1,0 +1,46 @@
+
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="app.component.css"> -->
+        <style>
+          #prodTable{
+            /* background-color:aliceblue; */
+            position:center;
+            border: 5;
+            width: 100%;
+            height: 100%
+    
+          }
+         
+    
+   
+        </style>
+    
+    </head>
+
+<div class="row">
+        <!-- <p>hello Admin :{{name + value + manf}} </p>  -->
+        <p>hello Admin :{{name}} &nbsp; {{value}} &nbsp; {{manf}} </p> 
+
+        <table border="2" id="prodTable" cellspacing="3">
+            <tr>
+              <th>product List</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+                <td>product Name</td>
+                <td>{{name}}</td>
+            </tr>
+            <tr>
+              <td>Product Value</td>
+              <td>{{value}}</td>
+            </tr>
+            <tr>
+                <td>Manufature By</td>
+                <td>{{manf}}</td>
+            </tr>
+           
+          </table>
+    </div>
